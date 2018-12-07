@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "lola-seat-confirmation": {
+    "seat-confirmation": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/lola-seat-confirmation",
+            "outputPath": "dist/seat-confirmation",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "lola-seat-confirmation:build"
+            "browserTarget": "seat-confirmation:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "lola-seat-confirmation:build:production"
+              "browserTarget": "seat-confirmation:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "lola-seat-confirmation:build"
+            "browserTarget": "seat-confirmation:build"
           }
         },
         "test": {
@@ -106,7 +106,7 @@
         }
       }
     },
-    "lola-seat-confirmation-e2e": {
+    "seat-confirmation-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +115,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "lola-seat-confirmation:serve"
+            "devServerTarget": "seat-confirmation:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "lola-seat-confirmation:serve:production"
+              "devServerTarget": "seat-confirmation:serve:production"
             }
           }
         },
@@ -135,5 +135,5 @@
       }
     }
   },
-  "defaultProject": "lola-seat-confirmation"
+  "defaultProject": "seat-confirmation"
 }
