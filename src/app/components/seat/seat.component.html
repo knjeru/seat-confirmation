@@ -1,0 +1,3 @@
+<button [disabled]="seatData.occupied || seatUuid == selectedSeatUuid"
+        [ngClass]="getAvailablity()"
+        (click)="selectSeat()">{{seatUuid}}</button>
