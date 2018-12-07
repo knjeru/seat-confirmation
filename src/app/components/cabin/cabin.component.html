@@ -1,0 +1,10 @@
+<div class="container cabin-container">
+  <div class="row" *ngFor="let row of rows$ | async let i = index">
+    <div class="col"><p>{{i+1}}</p></div>
+    <app-seat
+          class="col"
+          [seatData]="seat"
+          *ngFor="let seat of row"
+          [selectedSeatUuid]="selectedSeatUuid"></app-seat>
+  </div>
+</div>
